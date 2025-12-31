@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "University thesis backend server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "watch:excel": "node watcher.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomastammoja/thesis-backend.git"
+  },
+  "author": "Thomas Tammoja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomastammoja/thesis-backend/issues"
+  },
+  "homepage": "https://github.com/thomastammoja/thesis-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chokidar": "^4.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "fast-glob": "^3.3.3",
+    "json5": "^2.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.16.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "type": "module"
+}
+

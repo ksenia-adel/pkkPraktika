@@ -1,0 +1,125 @@
+.accordionModal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 101 !important;
+}
+
+.accordionModal__container {
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  animation: fadein 500ms;
+  height: auto;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.accordionModal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #479eb8, #342b60 60%);
+  height: 20px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+}
+
+.accordionModal__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  cursor: context-menu;
+  color: #ffffff;
+}
+
+.accordionModal__closeIcon {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.accordionModal__closeIcon:hover {
+  transition: 200ms;
+  transform: scale(1.2);
+  color: #e4067e;
+}
+
+.accordionModal__table {
+  border-collapse: collapse !important;
+  font-size: 0.9rem;
+  max-width: 1400px;
+  width: auto;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin: 20px;
+  z-index: -1;
+}
+
+.accordionModal__head {
+  position: sticky;
+  border-radius: 5px 5px 0 0;
+  top: 60px;
+}
+
+.accordionModal__head tr {
+  background-color: #342b60;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.accordionModal__head th {
+  cursor: context-menu;
+}
+
+.accordionModal__body {
+  overflow-y: auto;
+}
+
+.accordionModal__head th,
+.accordionModal__body td {
+  padding: 5px 15px;
+}
+
+.accordionModal__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.accordionModal__body tr {
+  border-bottom: 1px solid #dadae4;
+  cursor: context-menu;
+}
+
+.accordionModal__body tr:last-of-type {
+  border-bottom: 2px solid #342b60;
+}
+
+.accordionModal__body tr:hover {
+  background-color: #dadae4;
+  transition: 100ms ease-in;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

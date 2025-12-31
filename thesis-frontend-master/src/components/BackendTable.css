@@ -1,0 +1,114 @@
+.backendTable__message h2 {
+  color: #e4067e;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: context-menu;
+  padding-bottom: 10px;
+}
+
+.backendTable {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.backendTable__head tr {
+  background-color: #342b60;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: sticky;
+  top: 60px;
+}
+
+.backendTable__head th {
+  cursor: context-menu;
+}
+
+.backendTable__body {
+  overflow-y: auto;
+}
+.backendTable__head tr th,
+.backendTable__body tr td {
+  padding: 12px 15px;
+  overflow-wrap: break-all;
+  word-break: break-all;
+}
+
+.backendTable__body td input {
+  width: 100%;
+}
+
+.backendTable__body tr {
+  border-bottom: 1px solid #dadae4;
+  cursor: context-menu;
+}
+
+.backendTable__body tr:last-of-type {
+  border-bottom: 2px solid #342b60;
+}
+
+.backendTable__idColumn {
+  display: flex;
+  align-items: center;
+}
+
+.backendTable__body #expandedRow {
+  background-color: #dadae4;
+}
+
+.backendTable__buttonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.backendTable__button {
+  color: inherit;
+  cursor: pointer;
+}
+
+.backendTable__button:hover {
+  color: #e4067e;
+  transition: 150ms ease-in-out;
+}
+
+.backendTable__body tr:hover {
+  background-color: #dadae4;
+  transition: 100ms ease-in;
+}
+
+.backendTable__accordion {
+  display: inline-block;
+}
+
+.backendTable__accordion tr:hover {
+  background-color: #ffffff;
+  transition: inline-block;
+}
+
+.backendTable__accordion tr:last-of-type {
+  border: none;
+}
+
+.backendTable__accordionButtons button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 30px;
+  width: 150px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+}
+
+.expandedTable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  width: auto;
+}
+
+.backend__content {
+  padding: 30px;
+  width: auto;
+  margin-left: 200px;
+}
+
+.backend__content h2 {
+  display: flex;
+  justify-content: space-between;
+  color: #e4067e;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: context-menu;
+}

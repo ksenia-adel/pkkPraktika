@@ -1,0 +1,57 @@
+.navigation {
+  height: 60px;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  background: linear-gradient(90deg, #479eb8, #342b60 60%);
+}
+
+.navigation__container {
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  margin-left: 50px;
+}
+
+.navigation__logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.navigation__items {
+  margin-left: 25px;
+}
+
+.navigation__items > * {
+  margin: 0 25px;
+}
+
+.navigation__items > button {
+  position: absolute;
+  right: 50px;
+}
+
+.navigation__item {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navigation__item:after {
+  display: block;
+  content: "";
+  border-bottom: 0.3rem solid #ffffff;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  padding: 0.5rem, 0;
+}
+
+.navigation__item:hover:after {
+  transform: scaleX(1);
+}

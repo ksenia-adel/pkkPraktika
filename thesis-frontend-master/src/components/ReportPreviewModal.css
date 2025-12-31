@@ -1,0 +1,254 @@
+.previewModal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101 !important;
+}
+
+.previewModal__container {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+  background-color: #ffffff;
+  animation: fadein 500ms;
+  height: 90vh;
+  width: 210mm !important;
+  overflow-y: auto;
+}
+
+.previewModal__content {
+  height: calc(297mm - 25mm - 25mm) !important;
+  width: calc(210mm - 30mm - 25mm);
+  padding-top: 25mm;
+  padding-right: 25mm;
+  padding-bottom: 25mm;
+  padding-left: 30mm;
+  font-size: 11px;
+}
+
+.previewModal__firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.previewModal__firstRow > img {
+  width: 43mm;
+  object-fit: contain;
+}
+
+.previewModal__firstRow > p {
+  position: fixed;
+  right: 10mm;
+  writing-mode: vertical-rl !important;
+}
+
+.previewModal__secondRow {
+  min-width: 100%;
+}
+
+.previewModal__secondRow .previewModal__column {
+  padding: 0;
+  border: none;
+}
+
+.preciewModal__accreditedLogo {
+  position: fixed;
+  top: 45mm;
+  right: 25mm;
+  width: 30mm;
+  object-fit: contain;
+}
+
+.previewModal__section {
+  display: flex;
+  flex-direction: column;
+  min-width: 155mm;
+}
+
+.previewModal__row {
+  margin-top: 2mm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.previewModal__column {
+  padding: 2mm;
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+.previewModal__column:first-child {
+  border-right: none;
+}
+
+.previewModal__proceduresTable {
+  margin-top: 2mm;
+  border-collapse: collapse;
+}
+
+.previewModal__proceduresTable th {
+  font-size: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+.previewModal__proceduresTable th:nth-of-type(3),
+th:nth-of-type(4) {
+  text-align: center;
+}
+
+.previewModal__proceduresTable th,
+.previewModal__proceduresTable td {
+  border: 1px solid #000000;
+  padding: 6px;
+}
+
+.previewModal__proceduresTable td:first-of-type {
+  width: 50%;
+}
+
+.previewModal__proceduresTable td:nth-of-type(2) {
+  width: 25%;
+}
+
+.previewModal__proceduresTable td:nth-of-type(3) {
+  width: 12.5%;
+}
+
+.previewModal__proceduresTable small {
+  margin-left: 1mm;
+}
+
+.previewModal__footer {
+  position: fixed;
+  top: 265mm;
+  min-width: 155mm;
+}
+
+.previewModal__footer .previewModal__row .previewModal__column {
+  flex-direction: column;
+  border: none;
+}
+
+.previewModal__buttonContainer {
+  position: absolute;
+  bottom: 2mm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.previewModal__button {
+  margin: 10px;
+  background-color: #342b60;
+  padding: 15px 0px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.previewModal__button:hover {
+  transition: 100ms;
+  background-color: #aa1352;
+  transform: scale(0.95);
+}
+
+hr {
+  border: none;
+  margin-top: 2mm;
+  border-top: 1px solid #dadae4;
+}
+
+.remarkRed {
+  color: red;
+}
+
+.uppercaseGray {
+  text-transform: uppercase;
+  color: #dadae4;
+  font-weight: bold;
+}
+
+.lowercaseGray {
+  color: #dadae4;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.blackBold {
+  color: #000000;
+  font-weight: bold;
+}
+
+.blackLight {
+  color: #000000;
+  padding-top: 1mm;
+  padding-left: 2mm;
+}
+
+.backgroundTitle {
+  padding: 2px 5px 2px 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #9396b0;
+  font-weight: bold;
+  --webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.marginSmall {
+  margin-top: 2mm;
+}
+
+.marginLarge {
+  margin-top: 5mm;
+}
+
+.center {
+  text-align: center;
+}
+
+.p__middle {
+  color: #dadae4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerColumn {
+  padding-left: 0;
+}
+
+.pageNumber {
+  text-align: right;
+}
+
+@media print {
+  .previewModal__button {
+    display: none;
+  }
+
+  .previewModal__container {
+    position: absolute !important;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    background-color: #ffffff;
+    width: 210mm !important;
+    height: 100% !important;
+    overflow: visible;
+  }
+}

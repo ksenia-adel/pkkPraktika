@@ -1,0 +1,125 @@
+.report__container {
+  background: #ffffff;
+  padding: 30px;
+  max-width: 1400px;
+  margin: 25px auto;
+  font-size: 0.9rem;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.report h2 {
+  display: flex;
+  justify-content: space-between;
+  color: #e4067e;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  cursor: context-menu;
+}
+
+.report__container h3 {
+  display: flex;
+  color: #342b60;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: context-menu;
+}
+
+.report__editButton {
+  cursor: pointer;
+  color: #342b60;
+  font-size: 30px !important;
+}
+
+.report__editButton:hover {
+  color: #e4067e;
+  transition: 100ms ease-in;
+}
+
+.report__hidden {
+  opacity: 0;
+}
+
+.report__container {
+  min-width: 400px;
+  margin-bottom: 25px;
+}
+
+.report__container form {
+  margin: 30px auto 0 auto;
+}
+
+.report__container__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 50px;
+  margin-bottom: 20px;
+}
+
+.report__container__column label {
+  color: #342b60;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.report__container__column input,
+textarea {
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9396b0;
+  background: none;
+  outline: none;
+}
+
+.report__container__column textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.report__container__column input:focus,
+textarea:focus {
+  border: 1px solid #9396b0;
+  border-radius: 5px;
+}
+
+.report__container form button {
+  background-color: #342b60;
+  padding: 15px 0px;
+  width: 50%;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.report__container form button:hover {
+  transition: 100ms;
+  background-color: #aa1352;
+  transform: scale(0.95);
+}
+
+.report__container form button:disabled {
+  background-color: #dadae4;
+  cursor: auto;
+  transform: none;
+}
+
+.report__container form span {
+  color: #e4067e;
+}
+
+.report__proceduresTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

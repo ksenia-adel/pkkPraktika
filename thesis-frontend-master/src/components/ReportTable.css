@@ -1,0 +1,100 @@
+.table__addContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.table__addContent span:first-of-type {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.table__closeIcon:hover {
+  cursor: pointer;
+  transition: 200ms;
+  transform: scale(1.2);
+  color: #e4067e;
+}
+
+.table__addContent label {
+  color: #342b60;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.table__addContent input {
+  padding: 8px 10px;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #9396b0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.table__addContent input:focus {
+  border: 1px solid #9396b0;
+  border-radius: 5px;
+}
+
+.report__container button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #342b60;
+  padding: 10px 0px;
+  width: 25%;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.report__container button:hover {
+  transition: 100ms;
+  background-color: #aa1352;
+  transform: scale(0.95);
+}
+
+.report__container button:disabled {
+  background-color: #dadae4;
+  cursor: auto;
+  transform: none;
+}
+
+.table__addContent span:last-of-type {
+  color: #e4067e;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.reportTable tr {
+  cursor: context-menu;
+}
+
+.reportTable tbody tr:hover {
+  background-color: transparent;
+}
+
+.reportTable__value {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reportTable__value input {
+  height: 14px;
+  width: 100%;
+}

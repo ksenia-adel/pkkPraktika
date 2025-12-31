@@ -1,0 +1,17 @@
+{
+  "sheet": "CHNS-2025",
+  "columns": {
+    "customer": ["Tellija", "Kliendi nimi", "Klient"],
+    "start_date": ["Analüüsi algus", "Algus", "Alguse kuupäev"],
+    "end_date": ["Analüüsi lõpp", "Lõpp", "Lõpu kuupäev"],
+    "sample_name": ["Proovi nimetus", "Proovi nimi", "Proov"],
+    "method": ["Katsemeetod", "Katsemeetod ", "Meetod"],
+    "C": ["C", "Süsinik", "Süsinik (C)"],
+    "H": ["H", "Vesinik", "Vesinik (H)"],
+    "N": ["N", "Lämmastik", "Lämmastik (N)", "N    < 0,06"],
+    "S": ["S", "Väävel", "Väävel (S)"]
+  },
+  "units": {
+    "CHNS": "m/m%"
+  }
+}
